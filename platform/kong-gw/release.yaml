@@ -17,6 +17,7 @@ spec:
     image:
       repository: kong/kong-gateway
       tag: "3.0"
+    replicaCount: 1
     env:
       prefix: /kong_prefix/
       database: postgres
@@ -57,7 +58,8 @@ spec:
       enabled: true
       type: LoadBalancer
       annotations: 
-        konghq.com/protocol: "https"
+        service.beta.kubernetes.io/aws-load-balancer-type: "nlb" 
+        service.beta.kubernetes.io/aws-load-balancer-internal: "false"
       tls:
         # Enable HTTPS listen for the admin API
         enabled: true
