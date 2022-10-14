@@ -2,11 +2,14 @@
 
 ## Introduction
 
-Reference setup of deploying Kong using Flux v2.
+Reference setup of deploying Kong using Flux v2
+
+![Flux-Diagram](assets/kong-flux.png?raw=true)
+
 
 ## Set-up
 
-For this reference implementation, we will use Github to store our artifacts.
+For this reference implementation, we will use Github to store our artifacts , and EKS for the deployments. You can imeplement this using any CI/CD toolings or any Kubernetes clusters.
 
 ```
 # Creating a Sample Cluster in AWS
@@ -30,3 +33,5 @@ flux bootstrap github \
   --branch=master \
   --personal
 ```
+
+
