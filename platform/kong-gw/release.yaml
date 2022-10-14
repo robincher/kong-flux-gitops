@@ -46,6 +46,11 @@ spec:
       portal_gui_protocol: http
       portal_api_url: http://portalapi.ucentrics.kongtest.net:8004
       portal_gui_host: portal.ucentrics.kongtest.net:8003   
+      portal_session_conf:
+        valueFrom:
+          secretKeyRef:
+            name: kong-session-config
+            key: portal_session_conf
 
       portal: on
       password: # Set Super Admin Password
