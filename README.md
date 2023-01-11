@@ -34,4 +34,11 @@ flux bootstrap github \
   --personal
 ```
 
+If required, you can remove Flux from the cluster by running the following command 
+
+```
+ flux uninstall --namespace=flux-system
+```
+
+
 
