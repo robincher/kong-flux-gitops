@@ -34,11 +34,16 @@ flux bootstrap github \
   --personal
 ```
 
-If required, you can remove Flux from the cluster by running the following command 
+```
+# Force Reconcilation if required
+
+flux suspend hr kong -n kong-enterprise
+flux resume hr kong -n kong-enterprise
+```
+
+If required, you also can remove Flux from the cluster by running the following command 
 
 ```
  flux uninstall --namespace=flux-system
 ```
-
-
 

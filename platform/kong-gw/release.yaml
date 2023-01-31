@@ -204,9 +204,9 @@ spec:
 
     postgresql:
       enabled: true
-      auth:
-        username: kong
-        database: kong
+      # auth:
+      #   username: kong
+      #   database: kong
 
     ingressController:
       enabled: false
