@@ -23,7 +23,7 @@ spec:
 
       # Variables to set if you are using external Postgres Database
       database: postgres
-      pg_host: kong-db-postgresql.kong.svc.cluster.local
+      pg_host: kong-db-postgresql.kong-enterprise.svc.cluster.local
       pg_port: 5432
       pg_user: konger
       pg_database: kong # Pre-create in RDS First
