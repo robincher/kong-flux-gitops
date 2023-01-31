@@ -13,9 +13,9 @@ For this reference implementation, we will use Github to store our artifacts , a
 
 ```
 # Creating a Sample Cluster in AWS
-eksctl create cluster --name Kong-UC-Test-Cluster  --version 1.22 --region ap-southeast-2  --without-nodegroup
+eksctl create cluster --name Kong-GitOps-Test-Cluster  --version 1.24 --region ap-southeast-1  --without-nodegroup
 
-eksctl create nodegroup --cluster Kong-UC-Test-Cluster --name Worker-NG  --region ap-southeast-2  --node-type m5.large --nodes 1 --max-pods-per-node 50
+eksctl create nodegroup --cluster Kong-GitOps-Test-Cluster --name Worker-NG  --region ap-southeast-1 --node-type m5.large --nodes 1 --max-pods-per-node 50
 ```
 
 ### Bootstraping Flux 
