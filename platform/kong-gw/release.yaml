@@ -20,7 +20,18 @@ spec:
     replicaCount: 1
     env:
       prefix: /kong_prefix/
+
+      # Variables to set if you are using external Postgres Database
       database: postgres
+      pg_host: kong-db-postgresql.kong.svc.cluster.local
+      pg_port: 5432
+      pg_user: konger
+      pg_database: kong # Pre-create in RDS First
+      pg_password: 
+        valueFrom:
+          secretKeyRef:
+            name: kong-db-password # Pre-create it
+            key: postgresql-password # Pre-create it
 
       # Logs Output
       log_level: warn
@@ -203,10 +214,7 @@ spec:
       externalIPs: []
 
     postgresql:
-      enabled: true
-      # auth:
-      #   username: kong
-      #   database: kong
+      enabled: false
 
     ingressController:
       enabled: false
