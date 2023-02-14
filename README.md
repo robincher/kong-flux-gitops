@@ -1,5 +1,7 @@
 # Kong Flux Gitops
 
+[![][kong-logo]][kong-url]
+
 ## Introduction
 
 Reference setup of deploying Kong using Flux v2
@@ -47,3 +49,5 @@ If required, you also can remove Flux from the cluster by running the following 
  flux uninstall --namespace=flux-system
 ```
 
+[kong-url]: https://konghq.com/
+[kong-logo]: https://konghq.com/wp-content/uploads/2018/05/kong-logo-github-readme.png
