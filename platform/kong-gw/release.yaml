@@ -60,6 +60,8 @@ spec:
 
       portal: on
 
+      router_flavor: traditional
+
       password: # Set Super Admin Password
         valueFrom:
           secretKeyRef:
