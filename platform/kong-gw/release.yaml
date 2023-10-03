@@ -16,8 +16,8 @@ spec:
   values:
     image:
       repository: kong/kong-gateway
-      tag: "3.4.0.0"
-    replicaCount: 2
+      tag: "3.4.1.0"
+    replicaCount: 1
     env:
       prefix: /kong_prefix/
       # Variables to set if you are using external Postgres Database
@@ -43,6 +43,9 @@ spec:
       admin_error_log: /dev/stderr
       admin_gui_error_log: /dev/stderr
       portal_api_error_log: /dev/stderr
+
+      #DNS Cache Settings
+      dns_stale_ttl: 20
 
       # Admin Setting
       admin_api_uri: http://admin.flux.kongtest.net:8001  # CHANGE ME
