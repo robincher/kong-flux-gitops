@@ -48,7 +48,7 @@ spec:
       dns_stale_ttl: 20
 
       # Admin Setting
-      admin_api_uri: http://admin.flux.kongtest.net:8001  # CHANGE ME
+      admin_gui_api_url: http://admin.flux.kongtest.net:8001  # CHANGE ME
       admin_gui_url: http://manager.flux.kongtest.net:8002 # CHANGE ME
 
       # Portal Setting
