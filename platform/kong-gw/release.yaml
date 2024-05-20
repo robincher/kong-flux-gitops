@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: kong/kong-gateway
-      tag: "3.4.3.5"
+      tag: "3.4.3.8"
     replicaCount: 1
     env:
       prefix: /kong_prefix/
@@ -43,9 +43,9 @@ spec:
       admin_error_log: /dev/stderr
       admin_gui_error_log: /dev/stderr
       portal_api_error_log: /dev/stderr
-
-      #DNS Cache Settings
-      dns_stale_ttl: 20
+      
+      #Usuage Report Flag
+      anonymous_reports: off
 
       # Admin Setting
       admin_gui_api_url: http://admin.flux.kongtest.net:8001  # CHANGE ME
