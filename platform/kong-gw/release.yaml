@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: kong/kong-gateway
-      tag: "3.4.3.15"
+      tag: "3.4.3.16"
     replicaCount: 1
     env:
       prefix: /kong_prefix/
